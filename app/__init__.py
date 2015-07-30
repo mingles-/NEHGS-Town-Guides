@@ -16,6 +16,9 @@ app.config['DEBUG'] = True
 def home():
     return render_template('home.html')
 
+@app.route('/ny')
+def ny():
+    return render_template('ny.html')
 
 @app.route('/vt')
 def vt():
